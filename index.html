@@ -7,7 +7,7 @@
     <meta name="author" content="">
     <link rel="icon" href="/favicon.ico">
 
-    <title>Album example for Bootstrap</title>
+    <title>IMS 257 Final Project</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -27,16 +27,28 @@
 
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">About Us<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Contact Us</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Products</a>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Products</a>
           </li>
+<!--
+        <li class="nav-item active">
+            <a class="nav-link" href="#"><img src="assets/img/shopping_cart.png" height="25px">  $5.99</a>
+          </li>
+-->
         </ul>
+       <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><img src="assets/img/shopping_cart.png" height="25px"></button>
+<!--          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+        <a class="nav-link" style="color: white">$5.99</a>
+           
+
+        </form>
       </div>
     </nav>
     </header>
@@ -63,6 +75,8 @@
                 <h3>Adidas Miami University White Hockey Jersey</h3>
               <p class="card-text">Look like an official member of The Brotherhood with this Miami University hockey sweater from Adidas! Features Miami embroidered diagonally across the chest with a small Hawk's Head embroidered just under the chin. Also features a block M embroidered on the left elbow.</p>
                 <p><strong>Price: $120.00</strong></p>
+                <button type="button" class="btn btn-danger" style="width: 50%">Add to Cart</button>
+                
             </div>
             <div class="card">
               <img src="assets/img/sweatshirt.jpg" width="400" alt="Card image cap">
@@ -126,7 +140,7 @@
         <p class="float-right">
           <a href="#">Back to top</a>
         </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+        <p>&copy; Dec. 2017 | Made for IMS 257 by Alyssa Melendez, Ben Kolde, Elizabeth Dirska, and Helen Matt</p>
       </div>
     </footer>
 
