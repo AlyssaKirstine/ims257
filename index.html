@@ -8,12 +8,25 @@
     <link rel="icon" href="/favicon.ico">
 
     <title>IMS 257 Final Project</title>
+      
+      <style>
+      
+          img:hover{
+            cursor: pointer;
+            opacity: 0.5;
+            transition: .5s ease;
+            }
+          
+      </style>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet">
+      
+    <!-- JavaScript for Cart -->
+    <script type="text/javascript" type="module" src="helper.js"></script>
   </head>
 
   <body>
@@ -45,7 +58,7 @@
        <form class="form-inline my-2 my-lg-0">
         <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><img src="assets/img/shopping_cart.png" height="25px"></button>
 <!--          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
-        <a class="nav-link" style="color: white">$5.99</a>
+        <a id="myCart" class="nav-link" style="color: white">$5.99</a>
            
 
         </form>
@@ -60,7 +73,7 @@
           <h1 class="jumbotron-heading">Buy Hockey Gear and Apparel Here</h1>
           <p class="lead text-muted">The Miami RedHawks men's ice hockey team is a National Collegiate Athletic Association Division I college ice hockey program that represents Miami University, in Oxford, Ohio.</p>
           <p>
-            <a href="#" class="btn btn-primary">About Us</a>
+            <a href="#" class="btn btn-danger">About Us</a>
             <a href="#" class="btn btn-secondary">Contact Us</a>
           </p>
         </div>
@@ -71,62 +84,70 @@
 
           <div class="row">
             <div class="card">
-              <img src="assets/img/whiteHockeyJersey.jpg" width="400" alt="Card image cap">
+              <img src="assets/img/whiteHockeyJersey.jpg" style="display: block; margin: 0 auto;" width="200" alt="Card image cap">
                 <h3>Adidas Miami University White Hockey Jersey</h3>
               <p class="card-text">Look like an official member of The Brotherhood with this Miami University hockey sweater from Adidas! Features Miami embroidered diagonally across the chest with a small Hawk's Head embroidered just under the chin. Also features a block M embroidered on the left elbow.</p>
                 <p><strong>Price: $120.00</strong></p>
-                <button type="button" class="btn btn-danger" style="width: 50%">Add to Cart</button>
+                <button onclick="addToCart(120)" type="button" class="btn btn-danger" style="width: 50%">Add to Cart</button>
                 
             </div>
             <div class="card">
-              <img src="assets/img/sweatshirt.jpg" width="400" alt="Card image cap">
+              <img src="assets/img/sweatshirt.jpg" style="display: block; margin: 0 auto;" width="200" alt="Card image cap">
                 <h3>Adidas Black Miami Hockey Hoodie</h3>
               <p class="card-text">Need something to keep you warm on those chilly hockey nights at Goggin? This black Adidas Miami University Hockey hoodie is perfect AND has pockets!. It's lightweight and fleece lined for your comfort and features a hockey-style drawstring with Miami Hockey, Established 1809, and a block M imprinted on the chest.</p>
                 <p><strong>Price: $70.00</strong></p>
+                <button type="button" class="btn btn-danger" style="width: 50%">Add to Cart</button>
             </div>
             <div class="card">
-              <img src="assets/img/hockeyStick.jpg" width="400" alt="Card image cap">
+              <img src="assets/img/hockeyStick.jpg" style="display: block; margin: 0 auto;" width="200" alt="Card image cap">
                <h3>Miami RedHawks Natural Wood Kids Hockey Stick</h3>
               <p class="card-text">Perfect for any future hockey player! This mini Miami hockey stick will definitely gear your little one up for the hockey game!</p>
                 <p><strong>Price: $9.99</strong></p>
+                <button type="button" class="btn btn-danger" style="width: 50%">Add to Cart</button>
             </div>
 
             <div class="card">
-              <img src="assets/img/puck.jpg" width="400" alt="Card image cap">
+              <img src="assets/img/puck.jpg" style="display: block; margin: 0 auto;" width="200" alt="Card image cap">
                <h3>Miami RedHawk Hockey Puck</h3>
               <p class="card-text">Perfect gift for that hockey fan in your life! Play around with them with this Miami RedHawks hockey puck!</p>
                 <p><strong>Price: $9.99</strong></p>
+                <button type="button" class="btn btn-danger" style="width: 50%">Add to Cart</button>
             </div>
             <div class="card">
-              <img src="assets/img/licensePlate.jpg" width="400" alt="Card image cap">
+              <img src="assets/img/licensePlate.jpg" style="display: block; margin: 0 auto;" width="200" alt="Card image cap">
                <h3>Miami University Hockey License Plate Frame</h3>
               <p class="card-text">This license plate frame is perfect for showing off that Miami Hockey pride! This chrome frame features "Miami" over "Hockey" in bold white lettering atop of a glassy red background.</p>
                 <p><strong>Price: $16.99</strong></p>
+                <button type="button" class="btn btn-danger" style="width: 50%">Add to Cart</button>
             </div>
             <div class="card">
-              <img src="assets/img/quarterZip.jpg" width="400" alt="Card image cap">
+              <img src="assets/img/quarterZip.jpg" style="display: block; margin: 0 auto;" width="200" alt="Card image cap">
                <h3>Under Armour Miami Hockey CGI 1/4 Zip</h3>
               <p class="card-text">Never be cold at a Miami Hockey game again! This Under Armour 1/4 zip is made with CGI Technology fleece that holds in your body heat. It is perfect for the ice arena! The M is embroidered over Miami Hockey on the left chest. </p>
                 <p><strong>Price: $79.99</strong></p>
+                <button type="button" class="btn btn-danger" style="width: 50%">Add to Cart</button>
             </div>
 
             <div class="card">
-              <img src="assets/img/redCap.jpg" width="400" alt="Card image cap">
+              <img src="assets/img/redCap.jpg" style="display: block; margin: 0 auto;" width="200" alt="Card image cap">
                <h3>Miami University Hockey Red Cap - The Game</h3>
               <p class="card-text">Miami hockey is much more enjoyable when you're wearing a comfortable, worn in hockey hat like this one!</p>
                 <p><strong>Price: $16.99</strong></p>
+                <button type="button" class="btn btn-danger" style="width: 50%">Add to Cart</button>
             </div>
             <div class="card">
-              <img src="assets/img/gnome.jpg" width="400" alt="Card image cap">
+              <img src="assets/img/gnome.jpg" style="display: block; margin: 0 auto;" width="200" alt="Card image cap">
                <h3>Miami University Hockey Gnome - Spirit</h3>
               <p class="card-text">Miami University Hockey Gnome - He will be the perfect addition to any Miami Fans' yard! Standing only 11 1/4" tall he is a perfect addition to your Miami collection!</p>
                 <p><strong>Price: $19.99</strong></p>
+                <button type="button" class="btn btn-danger" style="width: 50%">Add to Cart</button>
             </div>
             <div class="card">
-              <img src="assets/img/jerseyPin.jpg" width="400" alt="Card image cap">
+              <img src="assets/img/jerseyPin.jpg" style="display: block; margin: 0 auto;" width="200" alt="Card image cap">
                <h3>Miami University Hockey Jersey Pin</h3>
               <p class="card-text">This hockey jersey pin is perfect to add to a collection or just to show off that RedHawks pride!</p>
                 <p><strong>Price: $9.99</strong></p>
+                <button type="button" class="btn btn-danger" style="width: 50%">Add to Cart</button>
             </div>
           </div>
 
@@ -159,5 +180,18 @@
         text: 'Thumbnail'
       });
     </script>
+      
+<!--
+      
+     <script type="text/javascript">
+
+        function cartCall(cost) {
+           addToCart
+        } // end countStars function
+
+        
+    </script>
+-->
+      
   </body>
 </html>
