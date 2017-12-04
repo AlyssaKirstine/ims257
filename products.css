@@ -1,0 +1,35 @@
+#pageWrap    {
+    margin-top: 10%;
+}
+#itemName   {
+}
+#availability   {
+    color: darkseagreen;
+}
+#sizes{
+    margin-top: 20%;
+}
+#price  {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#ADC    {
+    margin-top: 80%;
+}
+#description    {
+    opacity: .5;
+}
+.row  {
+  flex-wrap: wrap;  
+}
+
+@media (min-width: 320px) and (max-width: 850px)    {
+    #left    {
+        min-width: 90%;
+        margin-top: 5%
+    }
+    #right  {
+        min-width: 90%;
+        margin-top: 5%;
+    }
+}
