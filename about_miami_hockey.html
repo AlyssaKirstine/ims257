@@ -10,10 +10,10 @@
     <title>About Miami Hockey</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./Jumbotron Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="./Jumbotron Template for Bootstrap_files/jumbotron.css" rel="stylesheet">
+    <link href="album.css" rel="stylesheet">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     
@@ -57,8 +57,9 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="http://getbootstrap.com/docs/4.0/examples/jumbotron/#">Miami University Hockey</a>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="index.html">Miami Hockey</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -66,19 +67,31 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="http://getbootstrap.com/docs/4.0/examples/jumbotron/#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="about_miami_hockey.html">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="http://getbootstrap.com/docs/4.0/examples/jumbotron/#">About Us</a>
+            <a class="nav-link" href="#">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="http://getbootstrap.com/docs/4.0/examples/jumbotron/#">Contact Us</a>
+            <a class="nav-link" href="index.html">Products</a>
           </li>
-          
+<!--
+        <li class="nav-item active">
+            <a class="nav-link" href="#"><img src="assets/img/shopping_cart.png" height="25px">  $5.99</a>
+          </li>
+-->
         </ul>
-        
+       <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><img src="assets/img/shopping_cart.png" height="25px"></button>
+<!--          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+        <a id="myCart" class="nav-link" style="color: white">$0.00</a>
+           
+
+        </form>
       </div>
     </nav>
+    </header>
+
 
     <main role="main">
 
@@ -126,8 +139,13 @@
         </div>
     </main>
 
-    <footer class="container">
-      <p>© IMS257 2017</p>
+     <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>&copy; Dec. 2017 | Made for IMS 257 by Alyssa Melendez, Ben Kolde, Elizabeth Dirska, and Helen Matt</p>
+      </div>
     </footer>
 
       
