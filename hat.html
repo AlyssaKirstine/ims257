@@ -16,6 +16,9 @@
     <link href="album.css" rel="stylesheet">
     <link href="products.css" rel="stylesheet">
     <link href="magnifier.css" rel="stylesheet">
+      
+      <!-- JavaScript for Cart -->
+    <script type="text/javascript" type="module" src="helper.js"></script>
 
   </head>
 
@@ -31,15 +34,24 @@
       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">About Us<span class="sr-only"></span></a>
+            <a class="nav-link" href="about_miami_hockey.html">About Us<span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="contact.html">Contact Us</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">Products</a>
           </li>
         </ul>
+          
+          <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit"><img src="assets/img/shopping_cart.png" height="25px"></button>
+<!--          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">-->
+        <a id="myCart" class="nav-link" style="color: white">$0.00</a>
+           
+
+        </form>
+          
       </div>
     </nav>
     </header>
@@ -73,7 +85,7 @@
                         </div>-->
                     <br>
                     <div class="btn-group">
-                        <button type="button" class="btn-danger btn-lg " id="ADC">Add to Cart</button>
+                        <button onclick="addToCart(16.99)" type="button" class="btn-danger btn-lg " id="ADC">Add to Cart</button>
                     </div>
                     
                 </div>
@@ -91,8 +103,7 @@
         <p class="float-right">
           <a href="#">Back to top</a>
         </p>
-        <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-        <p>New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/getting-started/">getting started guide</a>.</p>
+        <p>&copy; Dec. 2017 | Made for IMS 257 by Alyssa Melendez, Ben Kolde, Elizabeth Dirska, and Helen Matt</p>
       </div>
     </footer>
 
